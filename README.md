@@ -13,9 +13,9 @@ This is an improved version of https://github.com/globaldatanet/aws-codepipeline
 | WebhookUrl | https://webhook_url_here | Required |
 | AccountId  |      My AWS Account      | Optional |
 
-# Amazone EventBridge (CloudWatch Events)
+# Amazon EventBridge (CloudWatch Events)
  - **Type:** Event Rule
- - **Event Pattern:** Only Success and Failures are filtered to avoid spamming
+ - **Event Pattern:** 
 ```
 {
   "source": ["aws.codepipeline"],
@@ -25,6 +25,8 @@ This is an improved version of https://github.com/globaldatanet/aws-codepipeline
   }
 }
 ```
+Only _Success_ and _Failures_ are included to avoid spamming. All the three stages _Source, Build,_ and _Deploy_ are included. You may adjust as required. 
+
 # Microsoft Teams Incoming Webhook
 Refer [here](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook) to generate a WebHook URL for a Teams Channel.
 
