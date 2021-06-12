@@ -1,7 +1,7 @@
 ## AWS CodePipeline MS Teams Notification
 # Original Author: https://github.com/globaldatanet/aws-codepipeline-notification
 # Modified by: Seff Parker
-# Modified Version: 1.0.2 20210524
+# Modified Version: 1.0.3 20210612
 
 import json
 import logging
@@ -45,7 +45,7 @@ def lambda_handler(event, context):
          color = "#000000"
 		
     # data for message cards
-    title = pipeline    
+    title = "CodePipeline: " + pipeline    
     accountString = "Account"
     summaryString = "Summary"
     statusString = "Status"
