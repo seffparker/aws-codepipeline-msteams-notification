@@ -30,5 +30,5 @@ Only _Success_ and _Failures_ are included to avoid spamming. All the three stag
 # Microsoft Teams Incoming Webhook
 Refer [here](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook) to generate a WebHook URL for a Teams Channel.
 
-# Sample Notificaiton
+# Sample Notification
 ![Sample Teams Notification](/codepipeline-teams-notification.png)
